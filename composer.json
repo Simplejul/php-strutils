@@ -1,5 +1,6 @@
 {
-    "require-dev": {
+    "name": "julien/php-strutils",
+    "require": {
         "phpunit/phpunit": "^7.3"
     }
 }
