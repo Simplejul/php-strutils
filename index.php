@@ -13,8 +13,8 @@
     include 'StrUtils.php';
     $string = new StrUtils('String');
 
+    $string->uglify();
     echo $string->getst();
-
     ?>
 </body>
 </html>

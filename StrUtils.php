@@ -1,23 +1,24 @@
 <?php
-echo 'ok';
+
 class StrUtils{
-    private $str = "rrr";
+
+    private $str;
 
     public function __construct($newstr){
         $this->str = $newstr;
     }
 
     public function bold(){
-        return '<b>'.$str.'</b>';
+        $this->str = '<b>'.$this->str.'</b>';
     }
     public function italic(){
-        return '<i>'.$str.'</i>';
+        $this->str = '<i>'.$this->str.'</i>';
     }
     public function underline(){
-        return '<span style="text-decoration: underline;">'.$str.'</span>';
+        $this->str = '<span style="text-decoration: underline;">'.$this->str.'</span>';
     }
     public function capitalize(){
-        return strtoupper($str);
+        $this->str = strtoupper($this->str);
     }
     public function uglify(){
         $this->bold();
@@ -27,7 +28,6 @@ class StrUtils{
     public function getst(){
         return $this->str;
     }
-
 
 }
 
